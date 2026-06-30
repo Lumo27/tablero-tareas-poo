@@ -63,6 +63,8 @@ class VentanaPrincipal(wx.Frame):
         btn_nueva = wx.Button(panel_base, label='Nueva tarea')
         btn_editar = wx.Button(panel_base, label='Editar tarea')
         btn_eliminar = wx.Button(panel_base, label='Eliminar tarea')
+        # agregue un boton de creditos porque en mac no se ve como en windows, asi se puede acceder
+        # a la info general, autor, y link del repo que es abierto
         btn_creditos = wx.Button(panel_base, label='Créditos')
         btn_nueva.Bind(wx.EVT_BUTTON, self.on_nueva_global)
         btn_editar.Bind(wx.EVT_BUTTON, self.on_editar_global)
