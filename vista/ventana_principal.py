@@ -29,6 +29,7 @@ class VentanaPrincipal(wx.Frame):
 
         self.init_menu()
         self.init_ui()
+        self.Maximize(True)
         self.Centre()
 
     # arma la barra de menu: archivo y ayuda
